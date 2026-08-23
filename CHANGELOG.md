@@ -30,7 +30,7 @@ How to use this file:
 - Initial release.
 -->
 
-[Unreleased]: https://github.com/<OWNER_HANDLE>/<PROJECT_NAME>/compare/HEAD...HEAD
+[Unreleased]: https://github.com/<OWNER_HANDLE>/<PROJECT_NAME>/commits/main
 <!-- After the first release, switch to:
 [Unreleased]: https://github.com/<OWNER_HANDLE>/<PROJECT_NAME>/compare/v0.1.0...HEAD
 [0.1.0]: https://github.com/<OWNER_HANDLE>/<PROJECT_NAME>/releases/tag/v0.1.0

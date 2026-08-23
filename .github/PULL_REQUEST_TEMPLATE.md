@@ -15,7 +15,7 @@ Closes #
 
 ## Checklist
 
-- [ ] Commits follow the [commit convention](../docs/COMMIT-CONVENTION.md)
+- [ ] Commits follow the [commit convention](docs/COMMIT-CONVENTION.md)
 - [ ] Tests added or updated for the change (or not applicable — explain below)
 - [ ] All tests and linters pass locally
 - [ ] Documentation updated (README, docs/, comments) where behavior changed
