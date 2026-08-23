@@ -11,7 +11,8 @@ This repository is a starting point for new personal projects, both public and p
 - A changelog skeleton following [Keep a Changelog](https://keepachangelog.com/) and [Semantic Versioning](https://semver.org/)
 - Documentation on branching strategies, commit conventions, and Architecture Decision Records (ADRs)
 - GitHub-specific configuration (issue and PR templates, `CODEOWNERS`, Dependabot)
-- Cross-language editor and ignore rules (`.editorconfig`, `.gitignore`)
+- Cross-language editor, line-ending, and ignore rules (`.editorconfig`, `.gitattributes`, `.gitignore`)
+- A checklist for the GitHub settings that files can't carry ([docs/REPO-SETTINGS.md](docs/REPO-SETTINGS.md))
 
 [TO BE FILLED IN: anything else this template grows to include]
 
@@ -26,9 +27,11 @@ This repository is a starting point for new personal projects, both public and p
    - `<YEAR>` / `<COPYRIGHT_HOLDER>` — in the chosen license file
    - `[TO BE FILLED IN]` — free-form sections that need project-specific content
 3. Pick a license: read [docs/LICENSE-GUIDE.md](docs/LICENSE-GUIDE.md), copy the right file from [licenses/](licenses/) to the repository root as `LICENSE`, and delete the `licenses/` directory.
-4. Rewrite this `README.md` for the actual project.
-5. Delete what you don't need (see the notes below on optional files).
-6. Reset `CHANGELOG.md` to a fresh `Unreleased` section.
+4. Rewrite this `README.md` for the actual project, starting from
+   [docs/README-TEMPLATE.md](docs/README-TEMPLATE.md).
+5. Configure the repository settings following [docs/REPO-SETTINGS.md](docs/REPO-SETTINGS.md).
+6. Delete what you don't need (see the notes below on optional files).
+7. Reset `CHANGELOG.md` to a fresh `Unreleased` section.
 
 ### Optional files
 
@@ -53,6 +56,7 @@ This repository is a starting point for new personal projects, both public and p
 ├── SECURITY.md                     # how to report vulnerabilities
 ├── CHANGELOG.md                    # Keep a Changelog + SemVer skeleton
 ├── .editorconfig                   # cross-language editor rules
+├── .gitattributes                  # line-ending normalization and binary handling
 ├── .gitignore                      # OS, IDE, and secrets ignores (not language-specific)
 ├── licenses/                       # license candidates — pick one, move to ./LICENSE
 │   ├── MIT.txt
@@ -60,6 +64,8 @@ This repository is a starting point for new personal projects, both public and p
 │   └── PROPRIETARY.txt
 ├── docs/
 │   ├── LICENSE-GUIDE.md            # how to choose a license
+│   ├── README-TEMPLATE.md          # README skeleton for new projects
+│   ├── REPO-SETTINGS.md            # GitHub settings checklist per repository
 │   ├── BRANCHING-STRATEGY.md       # trunk-based/GitHub Flow vs release-based
 │   ├── COMMIT-CONVENTION.md        # Conventional Commits, with examples
 │   ├── AI-AGENTS.md                # guidelines for CLAUDE.md / AGENTS.md and agent setup
