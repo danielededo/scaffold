@@ -23,7 +23,7 @@ $RECYCLE.BIN/
 .idea/
 *.iml
 # Visual Studio Code (keep shared settings if you deliberately commit them)
-.vscode/
+.vscode/*
 !.vscode/extensions.json
 # Vim
 *.swp
