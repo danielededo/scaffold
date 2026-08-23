@@ -22,6 +22,8 @@ This repository is a starting point for new personal projects, both public and p
    - `<PROJECT_NAME>` — the name of your new project
    - `<OWNER_HANDLE>` — your GitHub username
    - `<SECURITY_CONTACT_EMAIL>` — the address for vulnerability reports
+   - `<CONTACT_EMAIL>` — the code of conduct enforcement contact
+   - `<YEAR>` / `<COPYRIGHT_HOLDER>` — in the chosen license file
    - `[TO BE FILLED IN]` — free-form sections that need project-specific content
 3. Pick a license: read [docs/LICENSE-GUIDE.md](docs/LICENSE-GUIDE.md), copy the right file from [licenses/](licenses/) to the repository root as `LICENSE`, and delete the `licenses/` directory.
 4. Rewrite this `README.md` for the actual project.
