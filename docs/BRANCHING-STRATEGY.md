@@ -80,6 +80,25 @@ Libraries and tools with users pinned to major versions, anything with a
 support commitment ("v1 gets security fixes for a year"), on-prem or packaged
 software, or projects where releases go through a validation phase.
 
+## Releasing (applies to both strategies)
+
+Cutting a release is the same checklist in either model — only *where* you tag
+differs (on `main` for Option A, on the release branch for Option B):
+
+1. **Pick the version** with SemVer, derived from what sits in `Unreleased`:
+   any breaking change → MAJOR, any `feat` → MINOR, only fixes → PATCH.
+2. **Update `CHANGELOG.md`**: rename `Unreleased` to `[X.Y.Z] - YYYY-MM-DD`,
+   start a fresh empty `Unreleased` on top, and update the compare links at the
+   bottom.
+3. **Land it like any change**: a PR with a single
+   `chore(release): vX.Y.Z` commit.
+4. **Tag the merge commit**: `git tag -a vX.Y.Z -m "vX.Y.Z"` and
+   `git push origin vX.Y.Z`. Annotated tags, always — they carry author and date.
+5. **Create the GitHub Release** from the tag and paste the changelog section
+   into the notes, so users get notified and the notes are browsable.
+6. Optional automation: [release-please](https://github.com/googleapis/release-please)
+   can do steps 1–5 from the Conventional Commits history once the project has CI.
+
 ## Rules that apply in both
 
 - Branch names: `type/short-kebab-description` (`feat/user-auth`,
