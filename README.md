@@ -51,6 +51,8 @@ This repository is a starting point for new personal projects, both public and p
 ```
 /
 ├── README.md                       # this file — replace with the project's own README
+├── AGENTS.md                       # AI agent instructions (single source of truth)
+├── CLAUDE.md                       # pointer to AGENTS.md
 ├── CONTRIBUTING.md                 # contribution workflow
 ├── CODE_OF_CONDUCT.md              # Contributor Covenant (optional for private repos)
 ├── SECURITY.md                     # how to report vulnerabilities
@@ -71,7 +73,8 @@ This repository is a starting point for new personal projects, both public and p
 │   ├── AI-AGENTS.md                # guidelines for CLAUDE.md / AGENTS.md and agent setup
 │   └── adr/
 │       ├── README.md               # what ADRs are and how to use them
-│       └── 0000-template.md        # ADR template
+│       ├── 0000-template.md        # ADR template
+│       └── 0001-trunk-based-development.md  # this repo's own branching decision
 └── .github/
     ├── CODEOWNERS                  # optional for single-maintainer projects
     ├── PULL_REQUEST_TEMPLATE.md
