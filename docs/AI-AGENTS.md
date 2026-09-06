@@ -41,6 +41,9 @@ session; every line costs attention. Include:
 - **Boundaries** — what the agent must not do: files it must not edit
   (generated code, vendored deps), secrets locations, "never push to main",
   "never commit .env".
+- **Writing style** — the tone and formatting you expect in text the agent
+  produces (docs, commits, PR text). Prose over reflexive bullet lists, no
+  filler phrases, no emoji or decorative markdown, plain-text commit messages.
 
 Leave out: long style guides (linters enforce those better), aspirational
 process, anything already enforced by tooling, and anything you wouldn't tell
@@ -64,6 +67,8 @@ a new human contributor in their first hour.
 - Commits: Conventional Commits — see docs/COMMIT-CONVENTION.md
 - Branching: see docs/BRANCHING-STRATEGY.md
 - All code, comments, and docs are written in English.
+- Writing style: prose over reflexive lists, no filler phrases, no emoji or
+  decorative markdown, plain-text commit messages.
 
 ## Boundaries
 

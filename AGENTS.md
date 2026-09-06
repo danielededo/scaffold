@@ -24,6 +24,27 @@ by [docs/AI-AGENTS.md](docs/AI-AGENTS.md); `CLAUDE.md` is a pointer to it.
   `<OWNER_HANDLE>`, `<SECURITY_CONTACT_EMAIL>`, `<CONTACT_EMAIL>`, `<YEAR>`,
   `<COPYRIGHT_HOLDER>`, and `[TO BE FILLED IN]` — reuse them, don't invent new ones.
 
+## Writing style
+
+These rules apply to any text produced in this repository, by humans and
+agents alike: documentation, commit messages, pull request and issue text,
+code comments.
+
+- Prefer prose. Use bullet or numbered lists only when the content is
+  genuinely enumerable or sequential (options, checklists, step-by-step
+  procedures), not as a default layout for explanations.
+- Start with the substance. No filler or throat-clearing phrases
+  ("as you can see", "it's worth noting", "let me explain").
+- No generic disclaimers, hedging boilerplate, or pseudo-human tone (fake
+  enthusiasm, apologies, self-narration). State facts and uncertainty plainly.
+- No emoji and no arrow glyphs anywhere. No decorative formatting: headings
+  and tables belong to documents that need structure, not to short texts;
+  in running prose avoid bold for emphasis. In new prose prefer commas,
+  colons, or separate sentences over em dashes.
+- Commit messages are plain text: no markdown syntax at all.
+- Numbered sections and closing summaries only where the document type calls
+  for them (a guide with a procedure), never as reflex.
+
 ## Boundaries
 
 - Never commit directly to `main`; every change goes through a pull request.
