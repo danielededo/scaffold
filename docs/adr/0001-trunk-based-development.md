@@ -10,7 +10,7 @@ This repository is a documentation/template baseline maintained by a single
 person. It has no runtime, no versioned artifacts to support, and no users
 pinned to old versions: consumers always take the latest state via GitHub's
 "Use this template". [docs/BRANCHING-STRATEGY.md](../BRANCHING-STRATEGY.md)
-offers two strategies and requires each project to pick one explicitly — this
+offers two strategies and requires each project to pick one explicitly; this
 repository must eat its own dog food and record the choice.
 
 ## Decision
@@ -25,7 +25,7 @@ merge only**. Releases, if ever needed, are tags on `main`.
 
 - Pros: minimal ceremony; single always-current branch matches how template
   consumers use the repo; squash merges keep a readable, conventional history.
-- Cons: no stabilization branch — acceptable, since there is nothing to
+- Cons: no stabilization branch; acceptable, since there is nothing to
   stabilize in a docs-only repo.
 
 ### Option 2: Release-based

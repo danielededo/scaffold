@@ -10,7 +10,7 @@ under a minute of reading.
 # <PROJECT_NAME>
 
 [One or two sentences: what the project does and who it is for. Write this
-first and keep it brutally clear — it's the most-read text in the repo.]
+first and keep it brutally clear; it's the most-read text in the repo.]
 
 <!-- Optional badges: build status, version, license. Add them only when they
      are real (a broken badge is worse than none).
@@ -28,7 +28,7 @@ first and keep it brutally clear — it's the most-read text in the repo.]
 [TO BE FILLED IN: the exact commands to install or set up, copy-pasteable]
 ```
 
-Requirements: [TO BE FILLED IN: runtime, minimum versions, OS constraints — or delete]
+Requirements: [TO BE FILLED IN: runtime, minimum versions, OS constraints, or delete]
 
 ## Usage
 
@@ -40,7 +40,7 @@ Requirements: [TO BE FILLED IN: runtime, minimum versions, OS constraints — or
 
 ## Configuration
 
-[TO BE FILLED IN: environment variables, config files, defaults — or delete
+[TO BE FILLED IN: environment variables, config files, defaults, or delete
 this section if there is nothing to configure.]
 
 ## Development
@@ -59,5 +59,5 @@ knowing. Delete if the version badge and changelog already say it.]
 
 ## License
 
-[TO BE FILLED IN: e.g. "Distributed under the MIT License — see
-[LICENSE](LICENSE)." For private repos: "Proprietary — all rights reserved."]
+[TO BE FILLED IN: e.g. "Distributed under the MIT License; see
+[LICENSE](LICENSE)." For private repos: "Proprietary, all rights reserved."]

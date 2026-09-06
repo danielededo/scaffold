@@ -25,23 +25,23 @@ See [AGENTS.md](AGENTS.md) for project instructions.
 Claude Code also treats an `AGENTS.md` referenced this way as loaded context.
 A symlink (`ln -s AGENTS.md CLAUDE.md`) works too, if every environment you use
 handles symlinks; the pointer file is the safer default. Duplicate actual
-content across these files only as a last resort — it *will* drift.
+content across these files only as a last resort; it *will* drift.
 
 ## What belongs in AGENTS.md
 
 Keep it short (a screenful or two) and factual. Agents read it on every
 session; every line costs attention. Include:
 
-- **What the project is** — one paragraph, plus the tech stack.
-- **Commands** — how to build, test, lint, and run locally. Exact commands,
+- **What the project is**: one paragraph, plus the tech stack.
+- **Commands**: how to build, test, lint, and run locally. Exact commands,
   not prose.
-- **Conventions** — pointers to [COMMIT-CONVENTION.md](COMMIT-CONVENTION.md)
+- **Conventions**: pointers to [COMMIT-CONVENTION.md](COMMIT-CONVENTION.md)
   and [BRANCHING-STRATEGY.md](BRANCHING-STRATEGY.md) rather than restating them.
-- **Layout** — where source, tests, and docs live, if not obvious.
-- **Boundaries** — what the agent must not do: files it must not edit
+- **Layout**: where source, tests, and docs live, if not obvious.
+- **Boundaries**: what the agent must not do, such as files it must not edit
   (generated code, vendored deps), secrets locations, "never push to main",
   "never commit .env".
-- **Writing style** — the tone and formatting you expect in text the agent
+- **Writing style**: the tone and formatting you expect in text the agent
   produces (docs, commits, PR text). Prose over reflexive bullet lists, no
   filler phrases, no emoji or decorative markdown, plain-text commit messages.
 
@@ -64,7 +64,7 @@ a new human contributor in their first hour.
 
 ## Conventions
 
-- Commits: Conventional Commits — see docs/COMMIT-CONVENTION.md
+- Commits: Conventional Commits; see docs/COMMIT-CONVENTION.md
 - Branching: see docs/BRANCHING-STRATEGY.md
 - All code, comments, and docs are written in English.
 - Writing style: prose over reflexive lists, no filler phrases, no emoji or
@@ -86,14 +86,14 @@ and layout, but the generated file should not become a second source of truth.
 ## Hygiene rules
 
 - **Instruction files are code**: review changes to them in PRs like anything
-  else, keep them in English, and update them when commands or layout change —
+  else, keep them in English, and update them when commands or layout change;
   a stale `AGENTS.md` is worse than none.
 - **Never put secrets** or private URLs in instruction files; agents may echo
   them into logs, PRs, or third-party services.
 - **Personal preferences stay local**: per-user agent config
   (e.g. `CLAUDE.local.md`, editor-level rules) is git-ignored, not committed.
 - **Review agent output** like any contribution: agents follow this repo's
-  contribution rules (commit convention, PR flow) — the human remains
+  contribution rules (commit convention, PR flow); the human remains
   responsible for what gets merged.
 - If the project has directory-specific rules, nested `AGENTS.md` files in
   subdirectories are supported by most tools and beat one giant root file.

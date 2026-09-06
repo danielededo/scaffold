@@ -5,7 +5,7 @@
 An Architecture Decision Record is a short document that captures **one**
 significant decision: the context that forced it, the decision itself, the
 options that were considered, and the consequences. The collection of ADRs is
-the project's decision log — it answers "why is it built this way?" months
+the project's decision log: it answers "why is it built this way?" months
 later, when nobody remembers.
 
 "Architecturally significant" means the decision is expensive to reverse or
@@ -23,7 +23,7 @@ makes onboarding trivial if the project ever gains collaborators.
 
 1. Copy [`0000-template.md`](0000-template.md) to `NNNN-short-title.md`, where
    `NNNN` is the next number (e.g. `0001-use-postgres.md`).
-2. Fill it in. Keep it short — one page is plenty. Write in English, in full
+2. Fill it in. Keep it short: one page is plenty. Write in English, in full
    sentences; bullet lists are fine for options and consequences.
 3. Commit it together with (or just before) the change it justifies
    (`docs: add ADR 0001 on database choice`), and reference it from the PR.
@@ -34,16 +34,16 @@ makes onboarding trivial if the project ever gains collaborators.
 
 ## Statuses
 
-- **Proposed** — written but not yet settled (useful if you want to sleep on it).
-- **Accepted** — the decision is in effect.
-- **Deprecated** — no longer relevant (e.g. the component was removed).
-- **Superseded** — replaced by a newer ADR; link to it.
+- **Proposed**: written but not yet settled (useful if you want to sleep on it).
+- **Accepted**: the decision is in effect.
+- **Deprecated**: no longer relevant (e.g. the component was removed).
+- **Superseded**: replaced by a newer ADR; link to it.
 
 ## Index
 
 | ADR | Title | Status |
 | --- | --- | --- |
-| [0000](0000-template.md) | Template | — |
+| [0000](0000-template.md) | Template | n/a |
 | [0001](0001-trunk-based-development.md) | Use trunk-based development for this repository | Accepted |
 
 [TO BE FILLED IN: add a row per ADR as they are created]

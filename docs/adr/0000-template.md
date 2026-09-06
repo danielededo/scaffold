@@ -2,11 +2,11 @@
 
 - **Status:** Proposed | Accepted | Deprecated | Superseded by [ADR-NNNN](NNNN-example.md)
 - **Date:** YYYY-MM-DD
-- **Deciders:** [who was involved — usually just the maintainer]
+- **Deciders:** [who was involved, usually just the maintainer]
 
 ## Context
 
-[What is the situation and the problem? What forces are at play — technical
+[What is the situation and the problem? What forces are at play: technical
 constraints, deadlines, costs, skills, existing decisions? Write this so that a
 reader with no prior knowledge understands why a decision was needed at all.]
 
@@ -34,7 +34,7 @@ nothing" is often a legitimate option worth listing.]
 
 [What becomes easier, what becomes harder, what new constraints or follow-up
 work this creates. Include the negative consequences you are knowingly
-accepting — that's the most valuable part of the record.]
+accepting; that's the most valuable part of the record.]
 
 ## References
 

@@ -1,6 +1,6 @@
 # scaffold
 
-A meta/template repository with a sensible baseline for personal projects — licensing, governance, documentation, and contribution workflow. It is deliberately **not** language-specific: it contains the parts that every project needs regardless of stack.
+A meta/template repository with a sensible baseline for personal projects: licensing, governance, documentation, and contribution workflow. It is deliberately **not** language-specific: it contains the parts that every project needs regardless of stack.
 
 ## What this repo is
 
@@ -20,12 +20,12 @@ This repository is a starting point for new personal projects, both public and p
 
 1. Click **Use this template** on GitHub (or clone and re-init: `git clone`, delete `.git`, `git init`).
 2. Search for the placeholders and replace them:
-   - `<PROJECT_NAME>` — the name of your new project
-   - `<OWNER_HANDLE>` — your GitHub username
-   - `<SECURITY_CONTACT_EMAIL>` — the address for vulnerability reports
-   - `<CONTACT_EMAIL>` — the code of conduct enforcement contact
-   - `<YEAR>` / `<COPYRIGHT_HOLDER>` — in the chosen license file
-   - `[TO BE FILLED IN]` — free-form sections that need project-specific content
+   - `<PROJECT_NAME>`: the name of your new project
+   - `<OWNER_HANDLE>`: your GitHub username
+   - `<SECURITY_CONTACT_EMAIL>`: the address for vulnerability reports
+   - `<CONTACT_EMAIL>`: the code of conduct enforcement contact
+   - `<YEAR>` / `<COPYRIGHT_HOLDER>`: in the chosen license file
+   - `[TO BE FILLED IN]`: free-form sections that need project-specific content
 3. Pick a license: read [docs/LICENSE-GUIDE.md](docs/LICENSE-GUIDE.md), copy the right file from [licenses/](licenses/) to the repository root as `LICENSE`, and delete the `licenses/` directory.
 4. Rewrite this `README.md` for the actual project, starting from
    [docs/README-TEMPLATE.md](docs/README-TEMPLATE.md).
@@ -35,9 +35,9 @@ This repository is a starting point for new personal projects, both public and p
 
 ### Optional files
 
-- **`CODE_OF_CONDUCT.md`** — included because it is useful the moment a public project receives external contributors, but it is optional: feel free to remove it for private or strictly personal repositories.
-- **`.github/CODEOWNERS`** — optional for single-maintainer projects; see the comments inside the file.
-- **`docs/adr/`** — keep it only if you intend to record architecture decisions.
+- **`CODE_OF_CONDUCT.md`**: included because it is useful the moment a public project receives external contributors, but it is optional: feel free to remove it for private or strictly personal repositories.
+- **`.github/CODEOWNERS`**: optional for single-maintainer projects; see the comments inside the file.
+- **`docs/adr/`**: keep it only if you intend to record architecture decisions.
 
 ## What it does NOT include (and why)
 
@@ -50,7 +50,7 @@ This repository is a starting point for new personal projects, both public and p
 
 ```
 /
-├── README.md                       # this file — replace with the project's own README
+├── README.md                       # this file; replace with the project's own README
 ├── AGENTS.md                       # AI agent instructions (single source of truth)
 ├── CLAUDE.md                       # pointer to AGENTS.md
 ├── CONTRIBUTING.md                 # contribution workflow
@@ -60,7 +60,7 @@ This repository is a starting point for new personal projects, both public and p
 ├── .editorconfig                   # cross-language editor rules
 ├── .gitattributes                  # line-ending normalization and binary handling
 ├── .gitignore                      # OS, IDE, and secrets ignores (not language-specific)
-├── licenses/                       # license candidates — pick one, move to ./LICENSE
+├── licenses/                       # license candidates; pick one, move to ./LICENSE
 │   ├── MIT.txt
 │   ├── APACHE-2.0.txt
 │   └── PROPRIETARY.txt
