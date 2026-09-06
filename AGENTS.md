@@ -2,7 +2,7 @@
 
 Meta/template repository: the language-agnostic baseline (licensing, governance,
 documentation, contribution workflow) that new personal projects start from.
-Everything here is documentation or configuration — there is no code to build,
+Everything here is documentation or configuration; there is no code to build,
 test, or run.
 
 This file is the single source of truth for agent instructions, as prescribed
@@ -15,14 +15,14 @@ by [docs/AI-AGENTS.md](docs/AI-AGENTS.md); `CLAUDE.md` is a pointer to it.
 
 ## Conventions
 
-- Commits: Conventional Commits — see [docs/COMMIT-CONVENTION.md](docs/COMMIT-CONVENTION.md).
-- Branching: trunk-based — see [docs/BRANCHING-STRATEGY.md](docs/BRANCHING-STRATEGY.md)
+- Commits: Conventional Commits; see [docs/COMMIT-CONVENTION.md](docs/COMMIT-CONVENTION.md).
+- Branching: trunk-based; see [docs/BRANCHING-STRATEGY.md](docs/BRANCHING-STRATEGY.md)
   and [ADR 0001](docs/adr/0001-trunk-based-development.md).
 - All content (docs, comments, commit messages, file names) is written in
   English, no exceptions.
 - Per-project customization points use the placeholders `<PROJECT_NAME>`,
   `<OWNER_HANDLE>`, `<SECURITY_CONTACT_EMAIL>`, `<CONTACT_EMAIL>`, `<YEAR>`,
-  `<COPYRIGHT_HOLDER>`, and `[TO BE FILLED IN]` — reuse them, don't invent new ones.
+  `<COPYRIGHT_HOLDER>`, and `[TO BE FILLED IN]`; reuse them, don't invent new ones.
 
 ## Writing style
 
@@ -52,6 +52,6 @@ code comments.
   `CODE_OF_CONDUCT.md` are canonical third-party texts: never reword them
   (placeholders and the top note in the code of conduct are the only local parts).
 - Keep this repo language-agnostic: no language-specific tooling, manifests, or
-  CI — that boundary is documented in the README and is deliberate.
+  CI; that boundary is documented in the README and is deliberate.
 - When adding, renaming, or removing files, update the structure tree in
   `README.md` in the same pull request.

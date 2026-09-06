@@ -27,7 +27,7 @@ A useful report includes:
 - **Acknowledgement** of your report within a few days (usually faster).
 - An honest assessment: whether the issue is confirmed, its severity, and a rough
   timeline for a fix. Simple issues are usually fixed quickly; complex ones may
-  take longer — you'll be kept in the loop.
+  take longer; you'll be kept in the loop.
 - **Credit** in the release notes or changelog when the fix ships, unless you
   prefer to stay anonymous.
 

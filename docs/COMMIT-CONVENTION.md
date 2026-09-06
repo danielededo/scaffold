@@ -27,7 +27,7 @@ nameable purpose.
 | `feat` | a new user-facing capability | MINOR |
 | `fix` | a bug fix | PATCH |
 | `docs` | documentation only | none |
-| `style` | formatting, whitespace — no behavior change | none |
+| `style` | formatting, whitespace, no behavior change | none |
 | `refactor` | code change that neither fixes nor adds behavior | none |
 | `perf` | performance improvement | PATCH |
 | `test` | adding or fixing tests | none |
@@ -37,7 +37,7 @@ nameable purpose.
 | `revert` | reverting a previous commit | mirrors the reverted commit |
 
 A `!` after type/scope, **or** a `BREAKING CHANGE:` footer, marks a breaking
-change → MAJOR bump, regardless of type.
+change and implies a MAJOR bump, regardless of type.
 
 ## Scope
 
@@ -92,7 +92,7 @@ docs: document local development setup in README
 ## Practical rules
 
 - **One logical change per commit.** If the message wants an "and", split it.
-- Commits on a PR branch don't need to be perfect if the PR is squash-merged —
+- Commits on a PR branch don't need to be perfect if the PR is squash-merged,
   but the **squash commit message must follow this convention**, because that's
   what lands in history.
 - Don't bypass the convention with `wip` commits on shared branches; `wip` is

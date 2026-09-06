@@ -12,7 +12,7 @@ How to use this file:
   Added, Changed, Deprecated, Removed, Fixed, Security.
 - When releasing, rename "Unreleased" to the new version and date
   (e.g. "[1.2.0] - 2026-08-23"), then start a fresh "Unreleased" section on top.
-- Keep entries short, in plain language, written for users — not commit messages.
+- Keep entries short, in plain language, written for users, not commit messages.
 - Link versions to the corresponding GitHub compare/tag URLs at the bottom.
 -->
 
