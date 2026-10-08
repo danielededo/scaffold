@@ -93,9 +93,19 @@ carry out a specific procedure. A skill is a directory with a `SKILL.md` file
 instructions in the body) that the agent loads only when the task matches.
 Skills belong in the repository when the procedure is project-specific and
 already documented for humans; the skill then sequences the steps and points
-to the document instead of duplicating it. This template ships three under
-`.claude/skills/`: `new-adr`, `release`, and `init-from-template`. Keep yours
-equally thin; a skill that restates a guide will drift from it.
+to the document instead of duplicating it. This template ships three: `new-adr`, `release`, and `init-from-template`.
+Keep yours equally thin; a skill that restates a guide will drift from it.
+
+The specification defines what a skill contains, not where it lives, and each
+tool scans its own directory. Skills are stored under `.agents/skills/`, the
+location the specification recommends to client implementers as the shared
+convention, and each one is exposed to Claude Code through a symlink
+`.claude/skills/<name>` pointing to `../../.agents/skills/<name>` (Claude Code
+follows symlinked skill folders and loads each skill once). A tool with yet
+another location gets another symlink to the same source, never a copy. On
+Windows checkouts without symlink support, replace each symlink with a pointer
+skill: a `SKILL.md` carrying the same `name` and `description` and a one-line
+body that says to follow `.agents/skills/<name>/SKILL.md`.
 
 **Plugins** (tool-specific bundles of skills, commands, and hooks distributed
 through a marketplace) are personal tooling: they belong in your user-level
@@ -108,13 +118,9 @@ What to commit and what to keep local:
 | Commit | Keep local (git-ignored) |
 | --- | --- |
 | `AGENTS.md`, `CLAUDE.md` pointer | `CLAUDE.local.md` and other per-user instruction files |
-| `.claude/skills/` for project procedures | personal skills and plugins |
+| `.agents/skills/` for project procedures, with the `.claude/skills/` symlinks | personal skills and plugins |
 | `.claude/settings.json` when it holds shared project permissions or hooks | `.claude/settings.local.json` |
 | `.mcp.json` for project MCP servers, with secrets read from the environment | any file containing tokens or keys |
-
-The directory name `.claude/` is the one tool-specific element; the file
-format is not. If a project uses a second tool with its own location, point
-it at the same files rather than maintaining two copies.
 
 ## Hygiene rules
 

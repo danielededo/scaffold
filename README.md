@@ -19,7 +19,7 @@ This repository is a starting point for new personal projects, both public and p
 ## How to use it as a template
 
 1. Click **Use this template** on GitHub (or clone and re-init: `git clone`, delete `.git`, `git init`).
-   If you work with an AI coding agent, the `init-from-template` skill in `.claude/skills/` walks through steps 2 to 6.
+   If you work with an AI coding agent, the `init-from-template` skill in `.agents/skills/` walks through steps 2 to 6.
 2. Search for the placeholders and replace them:
    - `<PROJECT_NAME>`: the name of your new project
    - `<OWNER_HANDLE>`: your GitHub username
@@ -39,7 +39,7 @@ This repository is a starting point for new personal projects, both public and p
 - **`CODE_OF_CONDUCT.md`**: included because it is useful the moment a public project receives external contributors, but it is optional: feel free to remove it for private or strictly personal repositories.
 - **`.github/CODEOWNERS`**: optional for single-maintainer projects; see the comments inside the file.
 - **`docs/adr/`**: keep it only if you intend to record architecture decisions.
-- **`.claude/skills/`**: `init-from-template` runs once and deletes itself; keep `new-adr` and `release` only if an agent will run those procedures for you.
+- **`.agents/skills/`** (and the `.claude/skills/` symlinks): `init-from-template` runs once and deletes itself; keep `new-adr` and `release` only if an agent will run those procedures for you.
 
 ## What it does NOT include (and why)
 
@@ -77,11 +77,13 @@ This repository is a starting point for new personal projects, both public and p
 │       ├── README.md               # what ADRs are and how to use them
 │       ├── 0000-template.md        # ADR template
 │       └── 0001-trunk-based-development.md  # this repo's own branching decision
-├── .claude/
+├── .agents/
 │   └── skills/                     # project skills (Agent Skills format), see docs/AI-AGENTS.md
 │       ├── new-adr/SKILL.md
 │       ├── release/SKILL.md
 │       └── init-from-template/SKILL.md
+├── .claude/
+│   └── skills/                     # symlinks to .agents/skills/*, so Claude Code finds them
 └── .github/
     ├── CODEOWNERS                  # optional for single-maintainer projects
     ├── PULL_REQUEST_TEMPLATE.md

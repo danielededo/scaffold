@@ -34,8 +34,9 @@ only sequences the steps and the questions.
    the scaffold-specific boundaries (canonical texts, language-agnostic rule).
 7. Reset CHANGELOG.md to a single empty Unreleased section and fix the
    links at the bottom with the new owner and project name.
-8. Delete this skill (.claude/skills/init-from-template/) and keep new-adr
-   and release only if the user wants them.
+8. Delete this skill, both .agents/skills/init-from-template/ and the
+   .claude/skills/init-from-template symlink, and keep new-adr and release
+   only if the user wants them.
 9. Point the user to docs/REPO-SETTINGS.md for the GitHub settings that
    files cannot carry, and commit everything as
    "chore: initialize project from scaffold template".
