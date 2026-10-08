@@ -69,6 +69,8 @@ a new human contributor in their first hour.
 - All code, comments, and docs are written in English.
 - Writing style: prose over reflexive lists, no filler phrases, no emoji or
   decorative markdown, plain-text commit messages.
+- No tool attribution in commits or pull requests: no AI co-author
+  trailers, session links, or "generated with" footers.
 
 ## Boundaries
 
