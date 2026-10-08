@@ -42,6 +42,10 @@ code comments.
   in running prose avoid bold for emphasis. In new prose prefer commas,
   colons, or separate sentences over em dashes.
 - Commit messages are plain text: no markdown syntax at all.
+- Commit messages and pull request descriptions carry no tool attribution:
+  no AI co-author trailers, no session links, no "generated with" footers.
+  Authorship belongs to the account that commits; the tool used to write
+  the change is not part of the history.
 - Numbered sections and closing summaries only where the document type calls
   for them (a guide with a procedure), never as reflex.
 
