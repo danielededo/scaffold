@@ -12,6 +12,10 @@ by [docs/AI-AGENTS.md](docs/AI-AGENTS.md); `CLAUDE.md` is a pointer to it.
 
 - There is no build, test, or lint pipeline. Validation is manual: check that
   Markdown renders correctly and that YAML files (`.github/*.yml`) stay parseable.
+- Project procedures are available as skills in `.agents/skills/` (exposed to
+  Claude Code through symlinks in `.claude/skills/`): `new-adr`, `release`,
+  and `init-from-template` (the last one is for repositories created from
+  this template, not for this repository itself).
 
 ## Conventions
 

@@ -50,3 +50,7 @@ tmp/
 .tmp/
 *.bak
 *.orig
+
+### AI agent tooling (per-user, never shared)
+CLAUDE.local.md
+.claude/settings.local.json
