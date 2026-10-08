@@ -85,6 +85,37 @@ command), let it generate, then **merge the result into `AGENTS.md`** and reduce
 the tool file to a pointer again. Generators are good at discovering commands
 and layout, but the generated file should not become a second source of truth.
 
+## Skills, plugins, and tool-specific configuration
+
+Instruction files tell an agent what the project is; **skills** tell it how to
+carry out a specific procedure. A skill is a directory with a `SKILL.md` file
+(the Agent Skills format: YAML frontmatter with `name` and `description`,
+instructions in the body) that the agent loads only when the task matches.
+Skills belong in the repository when the procedure is project-specific and
+already documented for humans; the skill then sequences the steps and points
+to the document instead of duplicating it. This template ships three under
+`.claude/skills/`: `new-adr`, `release`, and `init-from-template`. Keep yours
+equally thin; a skill that restates a guide will drift from it.
+
+**Plugins** (tool-specific bundles of skills, commands, and hooks distributed
+through a marketplace) are personal tooling: they belong in your user-level
+configuration or in a dedicated personal repository, never in a project.
+Committing them would couple every repository created from this template to
+one tool and one plugin version.
+
+What to commit and what to keep local:
+
+| Commit | Keep local (git-ignored) |
+| --- | --- |
+| `AGENTS.md`, `CLAUDE.md` pointer | `CLAUDE.local.md` and other per-user instruction files |
+| `.claude/skills/` for project procedures | personal skills and plugins |
+| `.claude/settings.json` when it holds shared project permissions or hooks | `.claude/settings.local.json` |
+| `.mcp.json` for project MCP servers, with secrets read from the environment | any file containing tokens or keys |
+
+The directory name `.claude/` is the one tool-specific element; the file
+format is not. If a project uses a second tool with its own location, point
+it at the same files rather than maintaining two copies.
+
 ## Hygiene rules
 
 - **Instruction files are code**: review changes to them in PRs like anything
